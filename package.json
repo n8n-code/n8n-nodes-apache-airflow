@@ -1,6 +1,6 @@
 {
   "name": "@n8n-dev/n8n-nodes-apache-airflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Overview",
   "license": "MIT",
   "homepage": "https://n8n-code.github.io/n8n-dev/#/n8n-nodes-apache-airflow",

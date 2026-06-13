@@ -19,32 +19,32 @@ import { dagWarningDescription } from './resources/dag-warning';
 import { datasetDescription } from './resources/dataset';
 
 export class ApacheAirflow implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Apache Airflow',
-		name: 'N8nDevApacheAirflow',
-		icon: { light: 'file:./apache-airflow.svg', dark: 'file:./apache-airflow.dark.svg' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Overview',
-		defaults: { name: 'Apache Airflow' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevApacheAirflowApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Apache Airflow',
+                name: 'N8nDevApacheAirflow',
+                icon: { light: 'file:./apache-airflow.svg', dark: 'file:./apache-airflow.dark.svg' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'Overview',
+                defaults: { name: 'Apache Airflow' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevApacheAirflowApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -162,6 +162,6 @@ export class ApacheAirflow implements INodeType {
 		...userDescription,
 		...dagWarningDescription,
 		...datasetDescription
-		],
-	};
+                ],
+        };
 }
