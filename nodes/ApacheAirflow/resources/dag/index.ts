@@ -1060,7 +1060,7 @@ export const dagDescription: INodeProperties[] = [
 			"displayName": "Schedule Interval",
 			"name": "schedule_interval",
 			"type": "string",
-			"default": {},
+			"default": "{}",
 			"description": "Schedule interval. Defines how often DAG runs, this object gets added to your latest task instance's\nexecution_date to figure out the next schedule.\n",
 			"routing": {
 				"send": {
@@ -1791,7 +1791,7 @@ export const dagDescription: INodeProperties[] = [
 			"displayName": "Schedule Interval",
 			"name": "schedule_interval",
 			"type": "string",
-			"default": {},
+			"default": "{}",
 			"description": "Schedule interval. Defines how often DAG runs, this object gets added to your latest task instance's\nexecution_date to figure out the next schedule.\n",
 			"routing": {
 				"send": {
